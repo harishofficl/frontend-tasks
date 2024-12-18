@@ -1,0 +1,14 @@
+.div-2{
+    clear: both;
+}
+.pineapple-right{
+    float: right;
+}
+
+.pineapple-left{
+    float: left;
+}
+img{
+    margin: 15px;
+    margin-top: 0;
+}
