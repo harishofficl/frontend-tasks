@@ -54,15 +54,19 @@
 }
 
 /* Inline-block */
+.inline-div{
+    overflow: scroll;
+}
 .inline-container{
     border: 1px solid black;
+    width: max-content;
 }
 
 .inline-item{
     background-color: aquamarine;
     display: inline-block;
     padding:30px;
-    width:33%;
+    width:400px;
     text-align: center;
     align-content: center;
     box-sizing: border-box;
