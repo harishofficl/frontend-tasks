@@ -1,0 +1,12 @@
+.box-model{
+    background-color: aqua;
+    height: 100px;
+    padding: 5px;
+    border: 2px rebeccapurple solid;
+}
+h3{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    border: 2px red solid;
+}

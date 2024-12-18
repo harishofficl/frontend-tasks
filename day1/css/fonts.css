@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+VA+Guides&display=swap');
+
+.fonts{
+    background-color: rgb(228, 255, 72);
+    font-family: "Playwrite DE VA Guides", cursive;
+}
+#text-color{
+    color: rgb(255, 72, 0);
+}
