@@ -1,0 +1,51 @@
+/* NAVIGATION BAR */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dis-fl {
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.nav-container{
+  background: lightgrey;
+  margin-bottom: 100px;
+}
+
+.nav-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+
+.menu-item, .login, .signup {
+  padding: 12px;
+  align-content: center;
+}
+
+.login-container{
+  margin-left: auto;
+}
