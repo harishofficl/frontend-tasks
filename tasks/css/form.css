@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-container{
+    width: 25%;
+    margin: 100px auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.form-body{
+    width: 90%;
+    margin: auto auto;
+}
+
+input, textarea, label{
+    width: 90%;
+    padding: 2px;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type=submit] {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 12px;
+    margin: 5px 0;
+    margin-left: 5%;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
