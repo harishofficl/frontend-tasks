@@ -1,8 +1,8 @@
-.float{
-    background-color: aquamarine;
-    height: 320px;
+.float {
+  background-color: aquamarine;
+  height: 320px;
 }
-img{
-    float: right;
-    bottom: 0;
+img {
+  float: right;
+  bottom: 0;
 }

@@ -8,14 +8,6 @@
   display: flex;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -27,9 +19,8 @@ img {
   vertical-align: bottom;
 }
 
-.nav-container{
+.nav-container {
   background: lightgrey;
-  margin-bottom: 100px;
 }
 
 .nav-bar {
@@ -41,11 +32,29 @@ img {
   list-style-type: none;
 }
 
-.menu-item, .login, .signup {
+.menu-item,
+.login,
+.signup {
   padding: 12px;
   align-content: center;
 }
 
-.login-container{
+.login-container {
   margin-left: auto;
+}
+
+/* Float Nav Bar*/
+
+.nav-container-2 {
+  background-color: lightgrey;
+  width: fit-content;
+}
+
+.nav-bar-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-item {
+  list-style-type: none;
 }

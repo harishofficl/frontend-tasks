@@ -1,9 +1,9 @@
-.lists{
-    background-color: antiquewhite;
+.lists {
+  background-color: antiquewhite;
 }
-.ul{
-    list-style-type: circle;
+.ul {
+  list-style-type: circle;
 }
-.ol{
-    list-style-type: lower-alpha;
+.ol {
+  list-style-type: lower-alpha;
 }
