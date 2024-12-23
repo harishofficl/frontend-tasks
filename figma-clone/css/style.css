@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.dis-fl {
+  display: flex;
+}
+
+.head-div {
+    height: 1000px; 
+    background: url(../images/decore.png) no-repeat;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo img {
+  vertical-align: bottom;
+}
+
+.nav-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-menu-container {
+  margin-left: auto;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  width: 55%;
+}
+
+.login {
+  width: 30%;
+}
+
+.nav-menu-list,
+.nav-login-list {
+  justify-content: space-between;
+}
+
+.nav-menu-item,
+.nav-login-item {
+  padding: 12px;
+  align-content: center;
+}
