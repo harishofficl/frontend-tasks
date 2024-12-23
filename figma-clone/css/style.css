@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+VA+Guides&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #212832;
 }
 
 ul,
@@ -17,9 +20,27 @@ li {
   display: flex;
 }
 
-.head-div {
-    height: 1000px; 
-    background: url(../images/decore.png) no-repeat;
+.open-sans-font {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.border {
+  border: 1px #212832 solid;
+  border-radius: 4px;
+}
+
+body{
+  background: url(../images/decore.png) no-repeat;
+}
+
+.header{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .logo {
@@ -30,13 +51,9 @@ li {
   vertical-align: bottom;
 }
 
-.nav-bar {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .nav-menu-container {
   margin-left: auto;
+  margin-top: 8px;
   width: 80%;
   justify-content: space-between;
 }
@@ -45,8 +62,8 @@ li {
   width: 55%;
 }
 
-.login {
-  width: 30%;
+.left-nav-container {
+  width: 30%;   
 }
 
 .nav-menu-list,
@@ -56,6 +73,6 @@ li {
 
 .nav-menu-item,
 .nav-login-item {
-  padding: 12px;
+  padding: 5px 10px;
   align-content: center;
 }
