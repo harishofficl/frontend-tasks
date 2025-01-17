@@ -146,7 +146,7 @@ body {
 }
 
 .find-out-more {
-  background-color: #F1A501;
+  background-color: #f1a501;
   color: white;
   padding: 10px 20px;
   border-radius: 12px;
@@ -155,7 +155,7 @@ body {
 
 .play-demo {
   margin-left: 10px;
-  color: #5E6282;
+  color: #5e6282;
 }
 
 .landing-container {
@@ -181,7 +181,6 @@ body {
 }
 
 /* service */
-
 .service-container {
   width: 80%;
   margin: 20px auto 0 auto;
@@ -190,17 +189,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.service-heading-container > div {
+.service-heading-container > div,
+.destination-heading-container > div {
   text-align: center;
 }
 
-.service-heading-1 {
-  color: #5E6282;
+.service-heading-1,
+.destination-heading-1 {
+  color: #5e6282;
   margin-bottom: 10px;
 }
 
-.service-heading-2 {
-  color: #14183E;
+.service-heading-2,
+.destination-heading-2 {
+  color: #14183e;
   font-size: 35px;
 }
 
@@ -223,25 +225,81 @@ body {
   text-align: center;
 }
 
-.service-1-heading, .service-2-heading, .service-3-heading, .service-4-heading {
-  color: #1E1D4C;
+.service-1-heading,
+.service-2-heading,
+.service-3-heading,
+.service-4-heading {
+  color: #1e1d4c;
 }
-.service-1-content, .service-2-content, .service-3-content {
+.service-1-content,
+.service-2-content,
+.service-3-content {
   margin: 0 20px;
-  color: #5E6282;
+  color: #5e6282;
   font-size: small;
 }
 
 .service-4-content {
-  color: #5E6282;
+  color: #5e6282;
   font-size: small;
 }
 
 .service-body-container > div:hover {
-  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   transition: background-color 0.3s ease;
   transform: scale(1.05);
 }
 
+.destination-container {
+  width: 80%;
+  margin: 50px auto 0 auto;
+}
+
+.destination-body-container {
+  display: flex;
+  margin: 50px 0 0 0;
+  justify-content: space-evenly;
+}
+
+.destination-body-container > div {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.destination-body-container > div:hover {
+  transition: background-color 0.3s ease;
+  transform: scale(1.05);
+}
+
+.destination-1-image, .destination-2-image, .destination-3-image {
+  position: relative;
+}
+
+.destination-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background: rgba(255, 255, 255, 1);
+  color: #5E6282;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.destination-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+
+.destination-footer {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.destination-footer img {
+  margin-right: 10px;
+}
