@@ -109,6 +109,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Landing */
 .landing-container {
   margin: 30px auto 0 auto;
   width: 80%;
@@ -194,14 +195,19 @@ body {
   text-align: center;
 }
 
+/* headings */
 .service-heading-1,
-.destination-heading-1 {
+.destination-heading-1,
+.waystobook-heading-1,
+.testimonials-heading-1 {
   color: #5e6282;
   margin-bottom: 10px;
 }
 
 .service-heading-2,
-.destination-heading-2 {
+.destination-heading-2,
+.waystobook-heading-2,
+.testimonials-heading-2 {
   color: #14183e;
   font-size: 35px;
 }
@@ -251,6 +257,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Destination */
 .destination-container {
   width: 80%;
   margin: 50px auto 0 auto;
@@ -272,7 +279,9 @@ body {
   transform: scale(1.05);
 }
 
-.destination-1-image, .destination-2-image, .destination-3-image {
+.destination-1-image,
+.destination-2-image,
+.destination-3-image {
   position: relative;
 }
 
@@ -282,7 +291,7 @@ body {
   width: 100%;
   height: 25%;
   background: rgba(255, 255, 255, 1);
-  color: #5E6282;
+  color: #5e6282;
   text-align: center;
   padding: 10px 0;
   border-radius: 0 0 20px 20px;
@@ -303,3 +312,76 @@ body {
 .destination-footer img {
   margin-right: 10px;
 }
+
+/* Steps to book */
+.waystobook-container {
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+
+.waystobook-body {
+ width: 400px;
+}
+
+.waystobook-heading {
+  position: relative;
+}
+
+.waystobook-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+  box-shadow: 0 -8px 100px rgba(89, 177, 230, 0.5);
+}
+
+.content-1,
+.content-2,
+.content-3 {
+  display: flex;
+}
+
+.waystobook-content {
+  margin-top: 20px;
+}
+
+.waystobook-content > div {
+  margin-bottom: 20px;
+}
+
+.waystobook-content > div > div img {
+  margin-right: 20px;
+}
+
+.content-1-text-heading,
+.content-2-text-heading,
+.content-3-text-heading {
+  color: #5e6282;
+  font-size: medium;
+}
+
+.content-1-text-body,
+.content-2-text-body,
+.content-3-text-body {
+  color: #5e6282;
+  font-weight: 350;
+  font-size: 14px;
+}
+
+.testimonials-container {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dots {
+  margin-top: 50px;
+}
+
