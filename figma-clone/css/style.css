@@ -385,3 +385,24 @@ body {
   margin-top: 50px;
 }
 
+.client-container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.client-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-body > div {
+  padding: 10px 20px;
+}
+
+.client-body > div:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  transform: scale(1.03);
+}
