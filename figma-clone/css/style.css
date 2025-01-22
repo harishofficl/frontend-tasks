@@ -336,7 +336,7 @@ body {
   top: 0;
   right: 0;
   border-radius: 20px;
-  box-shadow: 0 -8px 100px rgba(89, 177, 230, 0.5);
+  box-shadow: 0 -8px 100px rgba(89, 177, 230, 0.3);
 }
 
 .content-1,
@@ -410,11 +410,7 @@ body {
   transform: scale(1.03);
 }
 
-/* .subscribe-container {
-  height: 500px;
-} */
-
-.subscribe-body {
+.subscribe-container {
   width: 85%;
   height: 400px;
   margin: 100px auto 0 auto;
