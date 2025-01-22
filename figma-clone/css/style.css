@@ -22,7 +22,15 @@ li {
   display: flex;
 }
 
-.open-sans-font {
+.open-sans-regular {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.open-sans-semibold {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -116,28 +124,28 @@ body {
 }
 
 .text-container {
-  width: 50%;
+  width: 60%;
   padding-top: 100px;
 }
 
 .text-1 {
   color: #df6951;
   font-size: 22px;
-  width: 80%;
+  width: fit-content;
 }
 
 .text-2 {
   font-size: 80px;
   color: #181e4b;
   margin-top: 10px;
-  width: 80%;
+  width: fit-content;
 }
 
 .text-3 {
   font-size: 18px;
   color: #5e6282;
   margin-top: 10px;
-  width: 80%;
+  width: fit-content;
 }
 
 .text-bottom-container {
@@ -165,14 +173,10 @@ body {
   margin-bottom: 150px;
 }
 
-.text-container {
-  width: 60%;
-}
-
 .image-container {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -5%;
   bottom: 0;
   height: max-content;
 }
@@ -319,9 +323,8 @@ body {
   margin: 100px auto 0 auto;
 }
 
-
 .waystobook-body {
- width: 400px;
+  width: 400px;
 }
 
 .waystobook-heading {
@@ -405,4 +408,149 @@ body {
   border-radius: 15px;
   transition: background-color 0.3s ease;
   transform: scale(1.03);
+}
+
+/* .subscribe-container {
+  height: 500px;
+} */
+
+.subscribe-body {
+  width: 85%;
+  height: 400px;
+  margin: 100px auto 0 auto;
+  background-color: #f9f7fe;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 130px 20px 20px 20px;
+  position: relative;
+}
+
+.subscribe-text {
+  color: #5e6282;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  font-size: 25px;
+}
+
+.subscribe-input {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.email-input {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.email-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "FontAwesome";
+  color: #39425d;
+}
+
+.email-input input:focus {
+  border-color: grey;
+  outline: none;
+}
+
+.subscribe-button {
+  background-color: #ff946d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #ff7d68;
+}
+
+.spiral-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.spiral-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.arrow-image {
+  position: absolute;
+  top: -5%;
+  right: -2%;
+}
+
+.subscribe-bg-image {
+  position: absolute;
+  bottom: -16%;
+  right: -8%;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 150px auto 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-col-1-row-1 {
+  font-size: 36px;
+  color: #181e4b;
+  margin-bottom: 10px;
+}
+
+.footer-col-1-row-2 {
+  font-size: 14px;
+  color: #5e6282;
+}
+
+.footer-col-2-row-1,
+.footer-col-3-row-1,
+.footer-col-4-row-1 {
+  font-size: 18px;
+  padding: 10px 10px 0 10px;
+}
+
+.footer-col-2-row-2,
+.footer-col-3-row-2,
+.footer-col-4-row-2 {
+  font-size: 14px;
+  color: #5e6282;
+  padding: 10px;
+}
+
+.footer-col-2-row-2 > p,
+.footer-col-3-row-2 > p,
+.footer-col-4-row-2 > p {
+  margin-bottom: 5px;
+}
+
+.footer-col-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-5-row-2 {
+  color:#5E6282;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
