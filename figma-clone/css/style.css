@@ -71,9 +71,19 @@ li {
   border-radius: 4px;
 }
 
-.header {
-  width: 80%;
-  margin: 30px auto 0 auto;
+.container {
+  width: 1326px;
+  margin: 0 auto;
+}
+
+.inner-container {
+
+  width: 83.33%;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding-top: 20px;
 }
 
 .logo {
@@ -111,7 +121,7 @@ li {
 }
 
 /* Content */
-body {
+.main-container {
   background-image: url("../images/decore.png");
   background-position: top right;
   background-repeat: no-repeat;
@@ -120,7 +130,6 @@ body {
 /* Landing */
 .landing-container {
   margin: 30px auto 0 auto;
-  width: 80%;
 }
 
 .text-container {
@@ -176,7 +185,7 @@ body {
 .image-container {
   position: absolute;
   top: 0;
-  right: -5%;
+  right: 0;
   bottom: 0;
   height: max-content;
 }
@@ -187,7 +196,6 @@ body {
 
 /* service */
 .service-container {
-  width: 80%;
   margin: 20px auto 0 auto;
   background-image: url("../images/services-bg.png");
   background-position: top right;
@@ -263,7 +271,6 @@ body {
 
 /* Destination */
 .destination-container {
-  width: 80%;
   margin: 50px auto 0 auto;
 }
 
@@ -319,7 +326,8 @@ body {
 
 /* Steps to book */
 .waystobook-container {
-  width: 80%;
+
+
   margin: 100px auto 0 auto;
 }
 
@@ -336,7 +344,7 @@ body {
   top: 0;
   right: 0;
   border-radius: 20px;
-  box-shadow: 0 -8px 100px rgba(89, 177, 230, 0.3);
+  box-shadow: 40px -40px 100px rgba(89, 177, 230, 0.3);
 }
 
 .content-1,
@@ -373,7 +381,7 @@ body {
 }
 
 .testimonials-container {
-  width: 80%;
+
   margin: 100px auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -389,7 +397,7 @@ body {
 }
 
 .client-container {
-  width: 80%;
+
   margin: 100px auto;
 }
 
@@ -411,7 +419,6 @@ body {
 }
 
 .subscribe-container {
-  width: 85%;
   height: 400px;
   margin: 100px auto 0 auto;
   background-color: #f9f7fe;
@@ -500,7 +507,6 @@ body {
 }
 
 .footer-container {
-  width: 80%;
   margin: 150px auto 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -522,6 +528,7 @@ body {
 .footer-col-4-row-1 {
   font-size: 18px;
   padding: 10px 10px 0 10px;
+  color: #080809;
 }
 
 .footer-col-2-row-2,
@@ -549,4 +556,11 @@ body {
   color:#5E6282;
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.license-container {
+  margin: 70px auto;
+  color: #5E6282;
+  text-align: center;
+  font-size: 14px;
 }
