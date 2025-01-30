@@ -5,7 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 a {
@@ -72,12 +72,11 @@ li {
 }
 
 .container {
-  width: 1326px;
+  width: 1440px;
   margin: 0 auto;
 }
 
 .inner-container {
-
   width: 83.33%;
   margin: 0 auto;
 }
@@ -125,33 +124,37 @@ li {
   background-image: url("../images/decore.png");
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 /* Landing */
 .landing-container {
-  margin: 30px auto 0 auto;
+  display: flex;
+  margin: 30px auto 100px auto;
 }
 
 .text-container {
-  width: 60%;
   padding-top: 100px;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .text-1 {
   color: #df6951;
-  font-size: 22px;
+  font-size: 20px;
   width: fit-content;
 }
 
 .text-2 {
-  font-size: 80px;
+  font-size: 70px;
   color: #181e4b;
   margin-top: 10px;
   width: fit-content;
+  overflow: visible;
 }
 
 .text-3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #5e6282;
   margin-top: 10px;
   width: fit-content;
@@ -176,22 +179,13 @@ li {
   color: #5e6282;
 }
 
-.landing-container {
-  position: relative;
-  height: auto;
-  margin-bottom: 150px;
-}
-
 .image-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: max-content;
+  flex: 1.2;
 }
 
 .travel-image {
-  max-width: 100%;
+  width: 85%;
+  height: auto;
 }
 
 /* service */
@@ -271,7 +265,7 @@ li {
 
 /* Destination */
 .destination-container {
-  margin: 50px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 
 .destination-body-container {
@@ -326,8 +320,6 @@ li {
 
 /* Steps to book */
 .waystobook-container {
-
-
   margin: 100px auto 0 auto;
 }
 
@@ -381,7 +373,6 @@ li {
 }
 
 .testimonials-container {
-
   margin: 100px auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -397,7 +388,6 @@ li {
 }
 
 .client-container {
-
   margin: 100px auto;
 }
 
@@ -553,14 +543,35 @@ li {
 }
 
 .footer-col-5-row-2 {
-  color:#5E6282;
+  color: #5e6282;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 .license-container {
   margin: 70px auto;
-  color: #5E6282;
+  color: #5e6282;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+main,
+.inner-container {
+  border: 1px solid red;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1370px) {
+  
 }
