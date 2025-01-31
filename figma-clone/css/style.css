@@ -141,23 +141,20 @@ li {
 
 .text-1 {
   color: #df6951;
-  font-size: 20px;
-  width: fit-content;
+  font-size: 1.5vw;
 }
 
 .text-2 {
-  font-size: 70px;
+  font-size: 5.20vw;
   color: #181e4b;
   margin-top: 10px;
-  width: fit-content;
   overflow: visible;
 }
 
 .text-3 {
-  font-size: 16px;
+  font-size: 1.15vw;
   color: #5e6282;
   margin-top: 10px;
-  width: fit-content;
 }
 
 .text-bottom-container {
@@ -168,14 +165,20 @@ li {
 
 .find-out-more {
   background-color: #f1a501;
-  color: white;
   padding: 10px 20px;
   border-radius: 12px;
   margin-right: 50px;
 }
 
+.find-out-more > a {
+  color: white;
+}
+
 .play-demo {
   margin-left: 10px;
+}
+
+.play-demo > a {
   color: #5e6282;
 }
 
@@ -184,7 +187,7 @@ li {
 }
 
 .travel-image {
-  width: 85%;
+  width: 90%;
   height: auto;
 }
 
@@ -194,6 +197,7 @@ li {
   background-image: url("../images/services-bg.png");
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .service-heading-container > div,
@@ -569,9 +573,6 @@ main,
   border: 1px solid red;
 }
 
-@media (max-width: 1440px) {
-}
+@media (max-width: 2560px) {
 
-@media (max-width: 1370px) {
-  
 }
