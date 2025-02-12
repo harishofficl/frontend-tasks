@@ -15,7 +15,7 @@ a {
 
 ul,
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 .dis-fl {
@@ -24,7 +24,6 @@ li {
 
 .open-sans-regular {
   font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-optical-sizing: auto;
@@ -32,7 +31,6 @@ li {
 
 .open-sans-semibold {
   font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-optical-sizing: auto;
@@ -113,10 +111,18 @@ li {
   justify-content: space-between;
 }
 
+.menu-button {
+  display: none;
+}
+
 .nav-menu-item,
 .nav-login-item {
   padding: 5px 10px;
   align-content: center;
+}
+
+.user-icon-img {
+  display: none;
 }
 
 /* Content */
@@ -145,7 +151,7 @@ li {
 }
 
 .text-2 {
-  font-size: 5.20vw;
+  font-size: 5.2vw;
   color: #181e4b;
   margin-top: 10px;
   overflow: visible;
@@ -286,6 +292,7 @@ li {
 .destination-body-container > div:hover {
   transition: background-color 0.3s ease;
   transform: scale(1.05);
+  transition: 0.2s;
 }
 
 .destination-1-image,
@@ -325,20 +332,18 @@ li {
 /* Steps to book */
 .waystobook-container {
   margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.waystobook-body {
-  width: 400px;
-}
-
-.waystobook-heading {
-  position: relative;
+.waystobook-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .waystobook-image {
-  position: absolute;
-  top: 0;
-  right: 0;
   border-radius: 20px;
   box-shadow: 40px -40px 100px rgba(89, 177, 230, 0.3);
 }
@@ -428,7 +433,7 @@ li {
   width: 60%;
   text-align: center;
   margin: 0 auto 40px auto;
-  font-size: 25px;
+  font-size: 1.8vw;
 }
 
 .subscribe-input {
@@ -563,16 +568,764 @@ li {
 
 .container {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
-main,
-.inner-container {
-  border: 1px solid red;
-}
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
 
 @media (max-width: 2560px) {
+  .container {
+    max-width: 1440px;
+  }
+}
 
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 1200px) {
+  .landing-container {
+    margin-bottom: 50px;
+  }
+
+  .text-container {
+    padding-top: 70px;
+  }
+
+  .find-out-more {
+    font-size: 14px;
+  }
+
+  .play-demo-button > a > img {
+    width: 45px;
+  }
+
+  .play-demo {
+    font-size: 14px;
+  }
+
+  .destination-container {
+    margin-top: 50px;
+  }
+
+  .destination-body-container {
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .destination-1-image > img,
+  .destination-2-image > img,
+  .destination-3-image > img {
+    width: 95%;
+  }
+
+  .waystobook-container {
+    margin-top: 50px;
+  }
+
+  .testimonials-container {
+    margin-top: 50px;
+  }
+
+  .client-container {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .subscribe-container {
+    height: 300px;
+    margin-top: 50px;
+  }
+
+  .footer-container {
+    margin-top: 100px;
+  }
+
+  .subscribe-bg-image {
+    display: flex;
+    justify-content: center;
+    right: -9%;
+    bottom: -17%;
+  }
+
+  .subscribe-bg-image img {
+    width: 90%;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 1150px) {
+  .testimonials-body-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonials-body-container > img {
+    width: 80%;
+  }
+
+  .testimonials-heading-2 {
+    font-size: 30px;
+  }
+
+  .destination-info {
+    font-size: 15px;
+  }
+
+  .waystobook-content-container {
+    width: 400px;
+  }
+
+  .waystobook-image > img {
+    width: 400px;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 1024px) {
+  .service-container {
+    background-size: 140px;
+  }
+
+  .service-body-container {
+    width: 90%;
+  }
+
+  .service-heading-2,
+  .destination-heading-2,
+  .waystobook-heading-2 {
+    font-size: 30px;
+  }
+
+  .subscribe-bg-image {
+    right: -10%;
+    bottom: -16%;
+  }
+
+  .subscribe-bg-image img {
+    width: 70%;
+  }
+
+  .arrow-image > img {
+    width: 80%;
+  }
+
+  .arrow-image {
+    top: -8%;
+    right: -4%;
+  }
+
+  .client-body > div > img {
+    width: 100px;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 992px) {
+  .inner-container {
+    width: 90%;
+  }
+
+  .spiral-2 {
+    text-align: end;
+  }
+
+  .spiral-1 > img,
+  .spiral-2 > img {
+    width: 70%;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 890px) {
+  .nav-login-item {
+    display: none;
+  }
+
+  .user-icon-img {
+    display: block;
+  }
+
+  .nav-menu {
+    width: 70%;
+  }
+
+  .left-nav-container {
+    justify-items: end;
+  }
+}
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 768px) {
+  .text-container {
+    padding-top: 50px;
+  }
+
+  .text-1 {
+    font-size: 1.7vw;
+  }
+
+  .text-2 {
+    font-size: 5.5vw;
+  }
+
+  .text-3 {
+    font-size: 1.3vw;
+  }
+
+  .service-heading-1,
+  .destination-heading-1,
+  .waystobook-heading-1,
+  .testimonials-heading-1 {
+    font-size: 15px;
+  }
+
+  .service-heading-2,
+  .destination-heading-2,
+  .waystobook-heading-2,
+  .testimonials-heading-2 {
+    font-size: 25px;
+  }
+
+  .service-container {
+    background-size: 120px;
+  }
+
+  .service-1-heading,
+  .service-2-heading,
+  .service-3-heading,
+  .service-4-heading {
+    font-size: 14px;
+  }
+
+  .service-1-content,
+  .service-2-content,
+  .service-3-content,
+  .service-4-content {
+    font-size: 11px;
+  }
+
+  .destination-info {
+    font-size: 12px;
+  }
+
+  .destination-footer img {
+    width: 14px;
+  }
+
+  .content-1-icon > img,
+  .content-2-icon > img,
+  .content-3-icon > img {
+    width: 40px;
+  }
+
+  .content-1-text-heading,
+  .content-2-text-heading,
+  .content-3-text-heading {
+    font-size: 14px;
+  }
+
+  .content-1-text-body,
+  .content-2-text-body,
+  .content-3-text-body {
+    font-size: 11px;
+  }
+
+  .waystobook-container {
+    justify-content: start;
+  }
+
+  .waystobook-content-container {
+    flex: 1;
+  }
+
+  .waystobook-image > img {
+    width: 350px;
+  }
+
+  .dots > img {
+    width: 50px;
+  }
+
+  .find-out-more {
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .play-demo-button > a > img {
+    width: 40px;
+  }
+
+  .play-demo {
+    font-size: 12px;
+  }
+
+  .subscribe-container {
+    height: 200px;
+    border-radius: 100px 20px 20px 20px;
+  }
+
+  .subscribe-bg-image {
+    display: none;
+  }
+
+  .footer-col-1-row-1 {
+    font-size: 30px;
+  }
+
+  .footer-col-1-row-2 {
+    font-size: 12px;
+  }
+
+  .footer-col-2-row-1,
+  .footer-col-3-row-1,
+  .footer-col-4-row-1 {
+    font-size: 16px;
+  }
+
+  .footer-col-2-row-2,
+  .footer-col-3-row-2,
+  .footer-col-4-row-2 {
+    font-size: 12px;
+  }
+
+  .footer-col-5-row-2 {
+    font-size: 16px;
+  }
+
+  .footer-col-5-row-3 img {
+    width: 90px;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 640px) {
+  .inner-container {
+    width: 95%;
+  }
+
+  .nav-bar {
+    gap: 20px;
+  }
+
+  .text-container {
+    padding-top: 30px;
+  }
+
+  .find-out-more {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+
+  .play-demo-button > a > img {
+    width: 35px;
+  }
+
+  .play-demo {
+    font-size: 10px;
+  }
+
+  .service-container {
+    background-size: 100px;
+  }
+
+  .service-heading-1,
+  .destination-heading-1,
+  .waystobook-heading-1,
+  .testimonials-heading-1 {
+    font-size: 12px;
+  }
+
+  .service-heading-2,
+  .destination-heading-2,
+  .waystobook-heading-2,
+  .testimonials-heading-2 {
+    font-size: 20px;
+  }
+
+  .service-body-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-body-container > div {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .service-body-container > div :hover {
+    transform: scale(1);
+  }
+
+  .service-body-container > div > div > img {
+    width: 50px;
+  }
+
+  .service-1-heading,
+  .service-2-heading,
+  .service-3-heading,
+  .service-4-heading {
+    flex: 0.5;
+  }
+
+  .service-1-content,
+  .service-2-content,
+  .service-3-content,
+  .service-4-content {
+    font-size: 12px;
+    width: max-content;
+    flex: 1;
+  }
+
+  .destination-info {
+    font-size: 10px;
+  }
+
+  .destination-footer img {
+    width: 12px;
+  }
+
+  .waystobook-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .waystobook-image {
+    width: fit-content;
+  }
+
+  .client-body > div > img {
+    width: 70px;
+  }
+
+  .subscribe-input {
+    width: 70%;
+    font-size: 12px;
+  }
+
+  .email-input input {
+    font-size: 12px;
+  }
+
+  .subscribe-button {
+    font-size: 12px;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 480px) {
+  .nav-menu-item {
+    font-size: 13px;
+  }
+
+  .landing-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-container {
+    padding-top: 20px;
+  }
+
+  .text-1 {
+    font-size: 14px;
+  }
+
+  .text-2 {
+    font-size: 50px;
+  }
+
+  .text-3 {
+    font-size: 12px;
+  }
+
+  .text-bottom-container {
+    margin-top: 10px;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .landing-container {
+    margin-bottom: 20px;
+  }
+
+  .destination-container {
+    margin-top: 20px;
+  }
+
+  .destination-header {
+    margin-top: 0;
+  }
+
+  .destination-info {
+    font-size: 8px;
+  }
+
+  .waystobook-container {
+    margin-top: 20px;
+  }
+
+  .testimonials-container {
+    margin-top: 20px;
+  }
+
+  .client-container {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .subscribe-container {
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 75px 20px 20px 20px;
+  }
+
+  .footer-container {
+    margin-top: 100px;
+  }
+
+  .client-body > div > img {
+    width: 50px;
+  }
+
+  .client-body > div {
+    padding: 10px 20px;
+  }
+
+  .spiral-1 > img,
+  .spiral-2 > img {
+    width: 40%;
+  }
+
+  .arrow-image > img {
+    width: 60%;
+  }
+
+  .arrow-image {
+    display: flex;
+    justify-content: flex-end;
+    top: -8%;
+    right: -1%;
+  }
+
+  .email-input input {
+    font-size: 10px;
+  }
+
+  .subscribe-button {
+    font-size: 10px;
+  }
+
+  /* footer */
+  .footer-col-1 {
+    flex: 1;
+  }
+  .footer-col-1-row-1 {
+    font-size: 25px;
+  }
+
+  .footer-col-1-row-2 {
+    font-size: 10px;
+  }
+
+  .footer-col-2-row-1,
+  .footer-col-3-row-1,
+  .footer-col-4-row-1 {
+    font-size: 14px;
+  }
+
+  .footer-col-2-row-2,
+  .footer-col-3-row-2,
+  .footer-col-4-row-2 {
+    font-size: 10px;
+  }
+
+  .footer-col-5-row-1 > img {
+    width: 40px;
+  }
+
+  .footer-col-5-row-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-col-5-row-2 {
+    display: none;
+    font-size: 14px;
+  }
+
+  .footer-col-5-row-3 img {
+    display: none;
+  }
+
+  .license-container {
+    font-size: 10px;
+  }
+
+  .service-container {
+    background-size: 70px;
+  }
+}
+
+/* Media Query pixels => 1440, 1200, 1024, 992, 768, 640, 480, 320 */
+
+@media (max-width: 320px) {
+  .text-1 {
+    font-size: 12px;
+  }
+
+  .text-2 {
+    font-size: 40px;
+  }
+
+  .text-3 {
+    font-size: 10px;
+  }
+
+  .landing-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu-item {
+    display: none;
+  }
+
+  .logo {
+    width: 60%;
+  }
+  .nav-menu-list {
+    justify-content: flex-end;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-menu img {
+    width: 30px;
+    margin-bottom: 5px;
+  }
+
+  .service-body-container {
+    margin-top: 10px;
+  }
+
+  .service-body-container > div > div > img {
+    width: 40px;
+  }
+
+  .service-1-heading, .service-2-heading, .service-3-heading, .service-4-heading {
+    font-size: 13px;
+  }
+
+  .service-1-content, .service-2-content, .service-3-content, .service-4-content {
+    font-size: 10px;
+  }
+
+  .service-heading-1,
+  .destination-heading-1,
+  .waystobook-heading-1,
+  .testimonials-heading-1 {
+    font-size: 10px;
+  }
+
+  .service-heading-2,
+  .destination-heading-2,
+  .waystobook-heading-2,
+  .testimonials-heading-2 {
+    font-size: 20px;
+  }
+  
+  .destination-body-container{
+    flex-direction: column;
+    
+  }
+
+  .destination-1, .destination-2, .destination-3{
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .destination-info {
+    height: 20%;
+    font-size: 12px;
+  }
+
+  .destination-footer img {
+    width: 14px;
+  }
+
+  .content-1-icon > img,
+  .content-2-icon > img,
+  .content-3-icon > img {
+    width: 30px;
+  }
+
+  .content-1-text-heading,
+  .content-2-text-heading,
+  .content-3-text-heading {
+    font-size: 12px;
+  }
+
+  .content-1-text-body,
+  .content-2-text-body,
+  .content-3-text-body {
+    font-size: 10px;
+  }
+
+  .waystobook-image > img {
+    width: 300px;
+  }
+
+  .testimonials-heading-2 {
+    font-size: 14px;
+  }
+
+  .client-body > div {
+    padding: 10px 0;
+  }
+
+  .client-body > div > img {
+    width: 50px;
+  }
+
+  .subscribe-container {
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50px 20px 20px 20px;
+  }
+
+  .spiral-1 > img,
+  .spiral-2 > img {
+    width: 30%;
+  }
+
+  .footer-container {
+    margin-top: 30px; 
+  }
+
+  .license-container {
+    margin: 20px auto;
+    font-size: 8px;
+  }
+
+  .footer-col-4 {
+    display: none;
+  }
+
+  .subscribe-text {
+    margin-bottom: 10px;
+  }
 }
