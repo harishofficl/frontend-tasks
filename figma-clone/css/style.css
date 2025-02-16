@@ -1006,6 +1006,15 @@ li {
     width: 70px;
   }
 
+  .dots {
+    display: none;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .subscribe-input {
     width: 70%;
     font-size: 12px;
@@ -1327,5 +1336,11 @@ li {
 
   .subscribe-text {
     margin-bottom: 10px;
+  }
+
+  
+
+  .arrow-image > img {
+    width: 45%;
   }
 }
